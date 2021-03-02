@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.mysize.surfaceui.ui.custom.views.fontable.FontableTextView
+        android:id="@+id/dialogTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/black_70"
+        android:textSize="17dp"
+        android:fontFamily="@font/montserrat_bold"
+        tools:text="This is a title" />
+
+    <com.mysize.surfaceui.ui.custom.views.fontable.FontableTextView
+        android:id="@+id/dialogMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black_70"
+        app:fontType="GOTHAM_RND_LIGHT"
+        tools:text="This is the dialog message" />
+
+</LinearLayout>

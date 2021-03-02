@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black">#FF000000</color>
+    <color name="Red">#FFFF0000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="warmPink">#FFF8686E</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">sizeitsdk</string>
+    <string name="calibration_before_discarding_calibration_values">Your last calibration session won\'t be saved</string>
+    <string name="calibration_device_toast">Device calibration</string>
+    <string name="calibration_done">Done!</string>
+    <string name="calibration_done_screen_headline">You\'re good to go!\n</string>
+    <string name="calibration_done_screen_text">Go ahead and measure \n yourself - we can\'t wait to \n calculate your sizes.</string>
+    <string name="calibration_headline">Calibrating your phone</string>
+    <string name="calibration_text">Place your phone on the \n floor or against a wall \n and wait until that side \n is marked <b>\"Done!\"</b></string>
+</resources>

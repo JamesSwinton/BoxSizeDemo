@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    tools:context=".ui.activities.MeasureActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/twilight_blue_two">
+
+        <ImageView
+            android:id="@+id/measureActivityBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back_icon"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <com.mysize.surfaceui.ui.custom.views.fontable.FontableTextView
+            android:id="@+id/measureActivityVersionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="Vr. 1.0.2.9"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/measureActivityLoaderContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loader"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loading_slide"
+            android:id="@+id/measureActivityMeasureLoader"
+            android:layout_gravity="center" />
+
+        <com.mysize.surfaceui.ui.custom.views.fontable.FontableTextView
+            android:id="@+id/measureActivityStartMeasureButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/measure_activity_start_btn_start_measure_text"
+            tools:text="@string/measure_activity_start_btn_calculating_measure_text"
+            android:textColor="@color/mango"
+            android:textSize="18dp"
+            android:paddingTop="37dp"
+            android:paddingBottom="37dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:fontType="GOTHAM_RND_BOLD"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/measureActivityTwoShotHeightResultText"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/measureActivityTwoShotWidthResultText"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/measureActivityTwoShotDepthResultText"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.mysize.surfaceui.ui.custom.views.fontable.FontableTextView
+        android:id="@+id/measureActivityMeasureDetailsText"
+        android:layout_below="@id/measureActivityLoaderContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/black"
+        android:text="@string/measure_start_details"
+        tools:visibility="gone"
+        app:fontType="GOTHAM_RND_LIGHT"/>
+
+    <com.mysize.surfaceui.ui.custom.views.fontable.FontableTextView
+        android:id="@+id/measureActivityMeasureAgainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_above="@+id/measureActivitySaveButton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/measure_activity_measure_again_button_text"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:textSize="17dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/dark_sky_blue"
+        app:fontType="GOTHAM_RND_MEDIUM"/>
+
+    <com.mysize.surfaceui.ui.custom.views.fontable.FontableTextView
+        android:id="@+id/measureActivitySaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/measure_activity_save_button_text"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/round_rect_sky_blue_normal"
+        app:fontType="GOTHAM_RND_MEDIUM"/>
+
+</RelativeLayout>

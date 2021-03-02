@@ -1,0 +1,2 @@
+com.example.calibration
+string app_name

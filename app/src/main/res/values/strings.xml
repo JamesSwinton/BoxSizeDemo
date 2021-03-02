@@ -1,0 +1,12 @@
+<resources>
+  <!-- App Name -->
+  <string name="app_name">BoxSize Demo</string>
+
+  <!-- Toolbar Menu Strings -->
+  <string name="launch_service">Launch Service</string>
+  <string name="calibrate">Calibrate</string>
+  <string name="settings">Settings</string>
+  <string name="take_your_first_measurement">Take your first measurement</string>
+  <string name="volume_measurement">Volume Measurement</string>
+  <string name="single_measurement">Single Measurement</string>
+</resources>

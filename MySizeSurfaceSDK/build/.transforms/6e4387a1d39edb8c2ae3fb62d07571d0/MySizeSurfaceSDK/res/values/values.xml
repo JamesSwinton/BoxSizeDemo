@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="beige">#f8f1ea</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="dark_sky_blue">#36a9e1</color>
+    <color name="mango">#f9b233</color>
+    <color name="twilight_blue">#0c445f</color>
+    <color name="twilight_blue_two">#0e455f</color>
+    <string name="alert_bad_measurement_error_title">Bad Measurement</string>
+    <string name="alert_cancel_button_title">Cancel</string>
+    <string name="alert_device_is_not_supported_message">Your device is not supported</string>
+    <string name="alert_error_occurred_error_message">An error occurred</string>
+    <string name="alert_error_title">Error</string>
+    <string name="alert_measure_error_occurred_error_message">An error occurred, please try again</string>
+    <string name="alert_move_in_straight_line_error_message">Move your device in a straight line</string>
+    <string name="alert_move_slightly_faster_error_message">Move your device slightly faster</string>
+    <string name="alert_no_internet_error_message">You have no internet connection</string>
+    <string name="alert_ok_button_title">OK</string>
+    <string name="alert_oops_title">Oops!</string>
+    <string name="alert_pause_between_tapping_error_message">Pause for a moment between tapping start and moving</string>
+    <string name="alert_place_gently_on_surface_error_message">Place the phone gently on the surface</string>
+    <string name="alert_repeat_measurement_smoothly_error_message">Please repeat the measurement more smoothly</string>
+    <string name="alert_something_went_wrong_message">Something went wrong.</string>
+    <string name="app_name">SurfaceUISDK</string>
+    <string name="measure_activity_end_details">Measure Again</string>
+    <string name="measure_activity_measure_again_button_text">Measure Again</string>
+    <string name="measure_activity_result_cm">CM</string>
+    <string name="measure_activity_result_inch">IN</string>
+    <string name="measure_activity_save_button_text">Save Measure</string>
+    <string name="measure_activity_start_btn_calculating_measure_text">Calculating...</string>
+    <string name="measure_activity_start_btn_start_measure_text">Start</string>
+    <string name="measure_move_details">Move the phone to the\nother side and wait for the\nbeep</string>
+    <string name="measure_next_step_two_shots_details">Lift your phone parallel to the surface and\nplace it at the far edge of the surface</string>
+    <string name="measure_start_btn_move_measure_text">Move</string>
+    <string name="measure_start_btn_place_measure_text">Place</string>
+    <string name="measure_start_details">When ready press Start</string>
+    <string name="measure_start_two_shots_details">Place the phone on the bottom corner of the\npackage and start measuring</string>
+    <string name="measure_stop_details">Place the device on one\nside of the surface and\nwait for the beep</string>
+    <string name="measure_stop_two_shots_details">Lift your phone parallel to the surface and\nplace it on the opposite side</string>
+    <style name="AppTheme">
+        
+    </style>
+    <declare-styleable name="FontableView">
+        <attr format="enum" name="fontType">
+            <enum name="GOTHAM_RND_BOLD" value="0"/>
+            <enum name="GOTHAM_RND_LIGHT" value="1"/>
+            <enum name="GOTHAM_RND_MEDIUM" value="2"/>
+            <enum name="YANONE_REG" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

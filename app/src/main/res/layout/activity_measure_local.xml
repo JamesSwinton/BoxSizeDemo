@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".MainActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+      layout="@layout/layout_toolbar"
+      android:id="@+id/layout_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+    <include
+      layout="@layout/layout_calculating_volume_view"
+      android:id="@+id/loading_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"/>
+
+    <LinearLayout
+      android:id="@+id/base_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_margin="8dp"
+      android:weightSum="10">
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/measurement_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+
+      <CheckBox
+        android:id="@+id/calculate_volume_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:text="Calculate volume?" />
+
+      <Button
+        android:id="@+id/start_measure_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:text="MEASURE" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</layout>
